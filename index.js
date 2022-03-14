@@ -1,4 +1,4 @@
-const baseURL = "	https://api.adviceslip.com/advice"
+const baseURL = "https://api.adviceslip.com/advice"
 const adviceID = document.querySelector(".advice-id")
 const adviceContent = document.querySelector(".advice-content")
 const dice = document.querySelector(".dice")
