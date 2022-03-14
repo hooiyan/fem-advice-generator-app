@@ -31,6 +31,7 @@ body {
 main {
   background-color: var(--dark-grayish-blue);
   border-radius: 15px;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
   padding: 48px 48px 72px 48px;
   position: relative;
   text-align: center;
