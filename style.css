@@ -31,15 +31,11 @@ body {
 main {
   background-color: var(--dark-grayish-blue);
   border-radius: 15px;
-  /* margin: auto 350px; */
-  padding: 48px;
+  padding: 48px 48px 72px 48px;
   position: relative;
   text-align: center;
-  /* height: 364px;
-  width: 540px; */
   height: auto;
   width: 38%;
-  /* width: fit-content; */
 }
 
 main h1 {
@@ -58,7 +54,6 @@ main p {
 }
 
 .divider {
-  margin-bottom: 40px;
   width: 100%;
 }
 
@@ -81,4 +76,51 @@ main p {
 
 .dice:hover {
   box-shadow: 0 0 40px -5px var(--neon-green);
+}
+
+/* Media queries */
+@media only screen and (max-width: 1300px) {
+  main {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  main {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 40px 24px 64px 24px;
+    width: 80%;
+  }
+
+  main h1 {
+    font-size: 1.1rem;
+  }
+
+  main p {
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  main {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  main {
+    padding: 40px 16px 64px 16px;
+  }
 }
