@@ -1,33 +1,33 @@
-# Frontend Mentor - Advice generator app solution
-
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+# Advice generator app
 
 ## Table of contents
 
-- [Frontend Mentor - Advice generator app solution](#frontend-mentor---advice-generator-app-solution)
+- [Advice generator app](#advice-generator-app)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [The challenge](#the-challenge)
+    - [Summary](#summary)
+    - [Links](#links)
     - [Screenshot](#screenshot)
       - [Desktop](#desktop)
       - [Mobile](#mobile)
-    - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
+  - [Details](#details)
+    - [Project purpose and goal](#project-purpose-and-goal)
+    - [Web stack and explanation](#web-stack-and-explanation)
+    - [Lesson learned](#lesson-learned)
+    - [Future improvements](#future-improvements)
     - [Useful resources](#useful-resources)
   - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
-### The challenge
+### Summary
 
-Users should be able to:
+A simple web app built with HTML, CSS, and JavaScript. The user can press on the button to generate a random advice every two seconds.
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Generate a new piece of advice by clicking on the dice icon
+### Links
+
+- Solution URL: [GitHub](https://github.com/hooiyan/fem-advice-generator-app)
+- Live Site URL: [Netlify](https://hy-advice.netlify.app/)
 
 ### Screenshot
 
@@ -39,20 +39,27 @@ Users should be able to:
 
 ![](./images/screenshots/mobile.png)
 
-### Links
+## Details
 
-- Solution URL: [View it on GitHub](https://github.com/hooiyan/fem-advice-generator-app)
-- Live Site URL: [View it on Vercel](https://h2y-advice-generator.vercel.app/)
+### Project purpose and goal
 
-## My process
+The purpose of this project is to revise how to use Fetch API to get data and display data to the user.
 
-### Built with
+### Web stack and explanation
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - Desktop-first workflow
 - [Advice Slip API](https://api.adviceslip.com/)
+
+### Lesson learned
+
+Although this is a rather simple project, I still learned a thing or two from it. Aside from learning how to use Fetch API, I also learned how to use the `setInterval()` function to generate random advice within a specific amount of time. Other than that, I learned how to use the `box-shadow` property to create a shadow effect on the button with this code `box-shadow: 0 0 40px -5px var(--neon-green);`
+
+### Future improvements
+
+The Advice Slip API does provide some other options to fetch data in different ways. I would like to add search functionality to the app or let the user looks through the advice by the id in ascending order.
 
 ### Useful resources
 
@@ -62,5 +69,5 @@ Users should be able to:
 
 ## Author
 
-<!-- - Website - [Add your name here](https://www.your-site.com) -->
+- Website - [hooiyan](https://hooiyan.netlify.app)
 - Frontend Mentor - [@hooiyan](https://www.frontendmentor.io/profile/hooiyan)
