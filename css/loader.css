@@ -1,5 +1,10 @@
 .advice-id.is-loading {
-  background: linear-gradient(110deg, hsl(218, 23%, 16%) 8%, hsl(217, 19%, 24%) 18%, hsl(218, 23%, 16%) 33%);
+  background: linear-gradient(
+    110deg,
+    hsl(218, 23%, 16%) 8%,
+    hsl(217, 19%, 24%) 18%,
+    hsl(218, 23%, 16%) 33%
+  );
   border-radius: 10px;
   background-size: 200% 100%;
   animation: 1.5s shine linear infinite;
@@ -7,7 +12,12 @@
 }
 
 .advice-content.is-loading {
-  background: linear-gradient(110deg, hsl(218, 23%, 16%) 8%, hsl(217, 19%, 24%) 18%, hsl(218, 23%, 16%) 33%);
+  background: linear-gradient(
+    110deg,
+    hsl(218, 23%, 16%) 8%,
+    hsl(217, 19%, 24%) 18%,
+    hsl(218, 23%, 16%) 33%
+  );
   border-radius: 10px;
   background-size: 200% 100%;
   animation: 1.5s shine linear infinite;

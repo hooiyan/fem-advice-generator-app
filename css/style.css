@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -9,7 +11,7 @@
   --neon-green: hsl(150, 100%, 66%);
   --grayish-blue: hsl(217, 19%, 38%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
-  --dark-blue: hsl(218, 23%, 16%); 
+  --dark-blue: hsl(218, 23%, 16%);
 }
 
 html {
@@ -18,7 +20,7 @@ html {
 
 body {
   background-color: var(--dark-blue);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.6rem;
   height: 100vh;
   margin: 0 auto;

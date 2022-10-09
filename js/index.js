@@ -15,7 +15,7 @@ function disableButton() {
   randomizeBtn.classList.add("disabled")
 }
 
-// Re-enable the randomizeBtn after 2 seconds
+// Enable the randomizeBtn after 2 seconds
 function enableButton() {
   randomizeBtn.innerHTML = diceIcon
   randomizeBtn.disabled = false
@@ -42,7 +42,7 @@ function showCount(i) {
   randomizeBtn.innerHTML = `<span>${i}</span>`
 }
 
-// Countdown for a desired amount of seconds before re-enabling the button
+// Countdown for a desired amount of seconds before enabling the button
 function countdown(seconds) {
   let counter = seconds
   showCount(counter)
@@ -50,13 +50,13 @@ function countdown(seconds) {
   const timer = setInterval(() => {
     counter--
     showCount(counter)
-  }, 1000);
+  }, 1000)
 
   setTimeout(() => {
     clearInterval(timer)
     enableButton()
     counter = seconds
-  }, (seconds * 1000));
+  }, seconds * 1000)
 }
 
 // 1. Show skeleton loader before the data is loaded
@@ -64,14 +64,14 @@ function countdown(seconds) {
 // 3. Hide the loader when data is loaded
 function loadAdvice() {
   showLoader()
-  fetch(baseURL)
-  .then(response => response.json())
-  .then(data => {
-    adviceID.innerText = `Advice #${data.slip.id}`,
-    adviceContent.innerText = data.slip.advice
-    hideLoader()
-  })
-  .catch(err => console.log(err))
+  fetch(baseURL, { cache: "no-cache" })
+    .then((response) => response.json())
+    .then((data) => {
+      adviceID.innerText = `Advice #${data.slip.id}`
+      adviceContent.innerText = data.slip.advice
+    })
+    .catch((err) => console.log(err))
+    .finally(() => hideLoader())
 }
 
 function updateAdvice() {
